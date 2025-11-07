@@ -4,8 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WS02_CSS</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <style>
+        h2, h3 {
+            color: white;
+            border: 5px solid rgb(69, 69, 69);
+            background-color: slategrey;
+            border-radius: 50px;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-size: 2em;
+            max-width: fit-content;
+        }
+    </style>
 </head>
 <body>
-    <h1>WS02_CSS</h1>
+    <h1 style="background: linear-gradient(90deg, seashell, black, seashell); padding:0.5em; color: aquamarine; font-size: 4em; width: 1000px;">Oskari</h1>
+    <p>A student of Laurea doing an exercise.</p>
+    <img src="images/ALT_Image.png" alt="Placeholder Profile Picture Image">
+    <div></div>
+    <h2>Hobbies (Unordered List)</h2>
+    <ul>
+        <li>Playing videogames</li>
+        <li>Watching youtube</li>
+        <li>Reading internet comics</li>
+    </ul>
+    <div style="margin:10px; padding: 0px;"></div>
+    <h2>Favorite videos (Ordered List)</h2>
+    <ol>
+        <li>Gameplay videos</li>
+        <li>Pet videos</li>
+        <li>Videogame soundtracks (Not a video by technicality)</li>
+    </ol>
+    <div></div>
+    <a href="https://youtube.com">Hyperlink to my favorite website (Youtube)</a>
+    <div></div>
+    <h3>My courses table</h3>
+    <table>
+        <tr>
+            <th>Course</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>Website Development</td>
+            <td>Progressing (OK)</td>
+        </tr>
+        <tr>
+            <td>Digital Services</td>
+            <td>Completed (Graded)</td>
+        </tr>
+        <tr>
+            <td>ICT-Infrastructure</td>
+            <td>Completed (Graded)</td>
+        </tr>
+    </table>
+    <div style="padding: 15px;"></div>
+    <h3>(Useless) Form</h3>
+    <form>
+        <label for="Input1">First Input</label><br>
+        <input type="text" id="Input1" name="Input1"><br>
+        <label for="Input2">Second Input:</label><br>
+        <input type="text" id="Input2" name="Input2"><br><br>
+        <input type="submit" value="Submit">
+    </form>
 </body>
 </html>
