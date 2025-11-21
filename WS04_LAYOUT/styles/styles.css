@@ -1,0 +1,195 @@
+/* In case anything needs to be globally applied*/
+* {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(0, 140, 200);
+}
+
+/******************* Type Selector *******************/
+body {
+    background: linear-gradient(90deg,rgb(0, 140, 200), rgb(40, 40, 40), rgb(40, 40, 40), rgb(40, 40, 40), rgb(0, 140, 200)) no-repeat;
+    background-color: black;
+}
+h1 {
+    color: rgb(0, 180, 240);
+    font-family: 'Courier New', Courier, monospace;
+    margin: 2rem;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+header {
+    background: linear-gradient(90deg, rgb(50, 100, 150), rgb(50,50,50), rgb(50, 100, 150));
+    border-bottom: darkblue solid 5px;
+    padding: 20px;
+}
+section {
+    border-top: 5px blue solid;
+    padding: 20px;
+    margin: 20px;
+}
+footer {
+    border-top: solid darkblue 5px;
+    background: linear-gradient(90deg, rgb(50, 100, 150), rgb(50,50,50), rgb(50, 100, 150));
+    padding: 20px;
+}
+
+h2 {
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+ul, ol {
+    background-color: azure;
+    border: 3px solid blue;
+    width: fit-content;
+}
+li {
+    width: auto;
+    border: 3px solid gray;
+}
+table {
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    border: 3px solid gray;
+    padding: 5px;
+}
+th {
+    font-size: 20px;
+    background-color: lightblue;
+}
+td{
+    font-size: 16px;
+    background-color: beige;
+}
+form{
+    background-color: white;
+    border: 4px solid black;
+    padding: 20px;
+    width: fit-content;
+}
+/*****************************************************/
+
+
+/****************** Class Selector *******************/
+.TransitionHover-Button{
+    background-color: black;
+    color: azure;
+    height: 50px;
+    width: 20%;
+    transition: background-color 5s ease-in, color 5s linear, width 5s ease;
+}
+.TransitionHover-Button:hover{
+    background-color: white;
+    color:black;
+    width: 40%;
+}
+.ImageFilter{
+    filter: invert(100%) blur(20px);
+    transition: filter 0.3s linear;
+}
+.ImageFilter:hover{
+    filter: invert(0%) blur(0px);
+}
+.AnimationBox{
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    background-color: lightgreen;
+    position: relative;
+    animation: shake 10ms linear infinite alternate;
+}
+.Psuedo-List li:nth-child(odd) {
+    background-color: white;
+}
+.Psuedo-List li:nth-child(even) {
+    background-color: lightgray;
+}
+.Psuedo-Table tr:nth-child(odd) td{
+    background-color: lightgray;
+}
+.Psuedo-Table tr:nth-child(even) td{
+    background-color: white;
+}
+.quote {
+    padding-left: 20px;
+    font-style: italic;
+}
+.quote::before {
+font-style: normal;
+content: '- “';
+font-weight: 900;
+color: darkslategray;
+}
+.quote::after {
+    font-style: normal;
+    content: '”';
+    font-weight: 900;
+    color: darkslategray;
+}
+.flex-container {
+    background-color: rgb(0, 140, 200);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    width: 40%;
+    gap: 10px;
+}
+.flex-collum {
+    flex-direction: column;
+    gap: 1rem;
+}
+.flex-item {
+    background-color: rgb(175, 225, 255);
+    color: black;
+    padding: 20px;
+    width: 90%;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 40%;
+    background-color: rgb(0, 140, 200);
+    padding: 10px;
+}
+.grid-item {
+    background-color: rgb(175, 225, 255);
+    color: black;
+    width: 80%;
+}
+.responsive-box {
+    padding: 20px;
+    width: fit-content;
+    color: black;
+    font-size: 20px;
+}
+/*****************************************************/
+
+
+
+/**************** Keyframes and Media ****************/
+@media (min-width: 1000px){
+    .responsive-box{
+        color: rgb(255, 55, 55);
+        background-color: rgba(255, 0, 150, 0.5);
+    }
+}
+@media (max-width: 1001px) {
+.responsive-box {
+        color: rgb(55, 55, 255);
+        background-color: rgb(150, 0, 255, 0.5);
+    }
+}
+@keyframes shake {
+    from {
+        left: -10px;
+    } to {
+        left: 10px;
+    }
+}
+/*****************************************************/

@@ -3,9 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>WS04_LAYOUT</title>
 </head>
 <body>
-    <h1>WS04_LAYOUT</h1>
+    <header>
+        <h1>The 4th Practice of... Website making.</h1>
+        <nav>
+            <ul>
+                <li><a href="#Maker">The Maker</a></li>
+                <li><a href="#Section1">Hobbies and Classes (HTML stuff)</a></li>
+                <li><a href="#Section2">Fictional hacker stuff (Page Layout)</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="Maker" style="padding: 10px; border-top: 0px transparent;">
+            <h1 style="margin: 0;">The Maker</h1>
+            <h2 style="color: rgb(50, 200, 175); font-size: 50px;">Oskari</h1>
+            <p>A student of Laurea doing an exercise.</p><br>
+            <img src="images/ALT_Image.png" class="ImageFilter" alt="Placeholder Profile Picture Image">
+            <br><blockquote class="quote">At least we are still alive</blockquote>
+            <p>Momenets before getting hit with <span style="color: red;">[超絕猛虎殺擊亂斬]</span></p>
+        </section>
+
+
+
+        <section id="Section1">
+            <h1 style="margin: 0;">Hobbies and Classes (HTML stuff)</h1>
+            <div style="margin: 3rem;"></div>
+            <h2>Hobbies (Unordered List)</h2>
+            <ul class="Psuedo-List">
+                <li>Playing videogames</li>
+                <li>Watching youtube</li>
+                <li>Reading internet comics</li>
+                <li>Doing nothing</li>
+            </ul>
+            <div style="margin: 1rem;"></div>
+            <h2>Favorite videos (Ordered List)</h2>
+            <ol>
+                <li>Gameplay videos</li>
+                <li>Pet videos</li>
+                <li>Videogame soundtracks (Not a video by technicality)</li>
+            </ol>
+            <div style="margin: 1rem;"></div>
+            <button class="TransitionHover-Button">Hover over me to charge me up!</button>
+            <br>
+            <a href="https://youtube.com">Hyperlink to my favorite website (Youtube)</a>
+            <div style="margin: 1rem;"></div>
+            <h3>My courses table</h3>
+            <table class="Psuedo-Table">
+                <tr>
+                    <th>Course</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>Website Development</td>
+                    <td>Progressing (OK)</td>
+                </tr>
+                <tr>
+                    <td>Digital Services</td>
+                    <td>Completed (Graded)</td>
+                </tr>
+                <tr>
+                    <td>ICT-Infrastructure</td>
+                    <td>Completed (Graded)</td>
+                </tr>
+            </table> 
+            <div style="margin: 1rem;"></div>
+            <h3>(Useless) Form</h3>
+            <form>
+                <label for="Input1">First Input</label><br>
+                <input type="text" id="Input1" name="Input1"><br>
+                <label for="Input2">Second Input:</label><br>
+                <input type="text" id="Input2" name="Input2"><br><br>
+                <input type="submit" value="Submit">
+            </form> 
+            <div style="margin: 1rem;"></div>
+            <div class="AnimationBox"></div>
+        </section>
+        
+
+
+        <section id="Section2">
+            <h1 style="margin: 0;">Fictional hacker stuff (Page Layout)</h1>
+
+            <h2>Process of hacking in movies (Flex Container)</h2>
+            <div class="flex-container flex-collum">
+                <div class="flex-item">Hacking Mainframe</div>
+                <div class="flex-item">Overtake System</div>
+                <div class="flex-item">Find the imporant files</div>
+                <div class="flex-item">I dunno, Proft?</div>
+            </div>
+
+            <div style="margin: 3rem;"></div>
+
+            <h2>Items that fictional hackers have (Grid Layout)</h2>
+            <div class="grid-container">
+                <div class="grid-item">Pocket Laptop <br>(A large laptop that SOMEHOW fits inside their pockets.)</div>
+                <div class="grid-item">Random device that automatically starts doing the hacking when turned on</div>
+                <div class="grid-item">A keycard looking thing that somehow works on every eletronic lock</div>
+                <div class="grid-item">Mobile Phone with apps that automatically start hacking when opened</div>
+                <div class="grid-item">Sunglasses that have mini holohraphic screens in them <br> (To see the HUD)</div>
+                <div class="grid-item">A Standard 9mm Semi-Auto Handgun <br> (For absolutely no reason, obviously)</div>
+            </div>
+
+            <div style="margin: 3rem;"></div>
+
+            <div class="responsive-box">Responsive box:<br>If we are <a style="color: red;">RED</a>, then screen is WIDE. 
+            <br> But if we are <a style="color: blue;">BLUE</a>, then screen is THIN</div>
+        </section>
+    </main>
+    <footer>
+        <p>From me: The stupid idiot by the name of Oskari</p>
+    </footer>
 </body>
 </html>
