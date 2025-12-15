@@ -1,0 +1,6 @@
+.BSOverride-BG{
+    background-color: rgba(0, 0, 0, 0.9);
+    border: rgb(50, 50, 200) 5px, solid;
+    justify-self: center;
+    padding: 5px;
+}
