@@ -1,0 +1,14 @@
+.justself-cent{
+    justify-self: center;
+}
+.BSOverride-BG-Shared{
+    background-color: rgba(0, 0, 0, 0.8);
+    border: rgb(0, 0, 0) 5px, solid;
+    border-radius: 10px;
+    justify-self: center;
+    padding: 5px;
+}
+.img-icon-size{
+    height: 50px;
+    width: 50px;
+}

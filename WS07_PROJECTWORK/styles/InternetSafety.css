@@ -4,3 +4,12 @@
     justify-self: center;
     padding: 5px;
 }
+
+.carousel-inner .carousel-item img {
+    height: 600px;
+    width: auto;
+}
+
+.li-mw1 {
+    max-width: 92%;
+}
