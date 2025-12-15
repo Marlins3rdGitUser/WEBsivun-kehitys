@@ -3,16 +3,14 @@ The main project.
 
 Description:
 
-Make a website with any designed, as long as it functions in both mobile and has a nice asthetic.
+Make a website of your chosen topic. Any topic works, as long you can make the website look astheticly pleasing.
+
+Chosen topic:
+
+Computer viruses. How to they work, how to find them and how to get rid of them.
 
 
 
 Notes:
 
-I fucked up. I did not have a subject that would work nicely.
-
-Now I got to pay the concequence.
-
-I need to have this done within 18 hours.
-
-Let's do this then.
+Time to right my wrongs. Let's do this. 18 hours.
